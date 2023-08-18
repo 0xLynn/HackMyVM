@@ -28,15 +28,6 @@ su sophia
 password : <password>
 ```
 
-List all visible files in the directory :
-
-```
-ls -l
-
--rw-r----- 1 root sophia  31 Jul 26 08:53 flagz.txt
--rw-r----- 1 root sophia 359 Jul 26 08:53 mission.txt
-```
-
 Display the content of `flagz.txt` to obtain `Flag Level 1`
 
 ### Level 2
@@ -80,16 +71,6 @@ su angela
 password : <password>
 ```
 
-List all visible files in the directory :
-
-```
-ls -l
-
--rw-r----- 1 root angela 73888 Jul 26 08:53 findme.txt
--rw-r----- 1 root angela    31 Jul 26 08:53 flagz.txt
--rw-r----- 1 root angela   216 Jul 26 08:53 mission.txt
-```
-
 Display the content of `flagz.txt` to obtain `Flag Level 2`
 
 ### Level 3
@@ -107,15 +88,6 @@ Login as `emma` with the password obtained :
 ```
 su emma
 password : <password>
-```
-
-List all visible files in the directory :
-```
-ls -l
-
--rw-r----- 1 root emma  16 Jul 26 08:53 -
--rw-r----- 1 root emma  31 Jul 26 08:53 flagz.txt
--rw-r----- 1 root emma 170 Jul 26 08:53 mission.txt
 ```
 
 Display the content of `flagz.txt` to obtain `Flag Level 3`
@@ -369,6 +341,13 @@ a9HFXWKINVzNQLKLDVAc
 `a9HFX` is not part of the password.
 
 `password : W*************c`
+
+Login as `violet` with the password obtained :
+
+```
+su violet
+password : <password>
+```
 
 Display the content of `flagz.txt` to obtain `Flag Level 10`
 
