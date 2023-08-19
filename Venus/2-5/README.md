@@ -260,6 +260,61 @@ password : <password>
 Display the content of `flagz.txt` to obtain `Flag Level 18`
 
 ### Level 19
+Mission : The password of eliza is the only string that is repeated (unsorted) in repeated.txt. 
+
+Use `uniq -d` to only read string that is repeated :
+
+`uniq -d repeated.txt`
+
+The password is one of the strings printed as the output.
+
+`password : F*************9`
+
+Login as `eliza` with the password obtained :
+
+```
+su eliza
+password : <password>
+```
+
 Display the content of `flagz.txt` to obtain `Flag Level 19`
+
 ### Level 20
+Mission : The user iris has left me her key.
+
+Display both visible and hidden files in the directory :
+
+```
+ls -la
+
+drwxr-x--- 2 root  eliza 4096 Jul 26 08:54 .
+drwxr-xr-x 1 root  root  4096 Jul 26 08:53 ..
+-rw-r--r-- 1 eliza eliza  220 Apr 23 21:23 .bash_logout
+-rw-r--r-- 1 eliza eliza 3526 Apr 23 21:23 .bashrc
+-rw-r----- 1 root  eliza 2602 Jul 26 08:54 .iris_key
+-rw-r--r-- 1 eliza eliza  807 Apr 23 21:23 .profile
+-rw-r----- 1 root  eliza   31 Jul 26 08:53 flagz.txt
+-rw-r----- 1 root  eliza  143 Jul 26 08:53 mission.txt
+```
+
+`ssh [-options] <remote_server_user>@<remote_server_ip> -p <remote_server_port>`
+
+`-i` is used to selects file from which the identity (private key) for public key authentication is read.
+
+We are alread inside the remote server. Therefore, the <remote_server_ip> can be subtituted with `localhost`.
+
+Login as `iris` with the given ssh private key :
+
+`ssh -i .iris_key iris@localhost`
+
+We're given the password for the user iris too.
+
+Display the content of `irispass.txt` :
+
+`cat irispass.txt`
+
+`password : k*************z`
+
 Display the content of `flagz.txt` to obtain `Flag Level 20`
+
+Thanks a lot for reading ~
