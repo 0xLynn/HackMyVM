@@ -64,7 +64,7 @@ Decode the hex encoded strings :
 
 `cat hi | xxd -r -p`
 
-`password : uvMwFDQrQWPMeGP`
+`password : u*************P`
 
 Login as `lucia` with the password obtained :
 
