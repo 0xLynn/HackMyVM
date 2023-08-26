@@ -76,7 +76,9 @@ password : <password>
 Display the content of `flagz.txt` to obtain `Flag Level 22`
 
 ### Level 23
-Mission :
+Mission : The user isabel has left her password in a file in the /etc/xdg folder but she does not remember the name, however she has dict.txt that can help her to remember.
+
+
 
 Display the content of `flagz.txt` to obtain `Flag Level 23`
 
